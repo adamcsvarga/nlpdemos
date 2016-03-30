@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>NLP Demos</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="font/css/fontello.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<div class="container work">
+<h1>Eliza</h1>
+<p>This program is a loose recreation of the first computer chatbot called Eliza, designed by Roger Weizenbaum in the 1960s. It simulates a psychotherapist. Some of the topics
+it likes to talk about are family, pets, fears and love life. It is very unlikely to have a meaningful conversation with it.</p>
+<textarea id="chatfield" name="txtChat" rows="10" cols="100" style="width:80%" readonly></textarea><br><br>
+<input type="text" name="txtAns" id="answer" size="100" onkeypress="searchKeyPress(event);"></input><br>
+<button type="submit" class="btn btn-large" id="okay"> SEND</button>
+</div>
+
+<script src="js/jquery-1.10.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/eliza.js"></script>
+<script>
+$('#myModal').modal('hidden')
+</script>
+</body>
+</html>
